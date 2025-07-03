@@ -4,9 +4,9 @@ on:
   push:
 
 env:
-  DOCKER_USERNAME: ${{ vars.DOCKER_NAME }}
+  DOCKER_USERNAME: ${{ vars.DOCKER_NAME }}  # 'icygauri123' must be in GitHub repo variables
   DOCKER_PASSWORD: ${{ secrets.NEW_DOCKER_PASSWORD }}
-  DOCKER_IMAGE: docker-demo-with-simple-python-app
+  DOCKER_IMAGE: icygauri123/docker-demo-with-simple-python-app
 
 jobs:
   build-using-docker:
